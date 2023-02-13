@@ -1,5 +1,7 @@
 package com.mogudiandian.http.caller;
 
+import com.mogudiandian.http.caller.cb.CircuitBreaker;
+import com.mogudiandian.http.caller.lb.LoadBalancer;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;

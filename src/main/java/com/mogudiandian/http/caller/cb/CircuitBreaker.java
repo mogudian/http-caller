@@ -1,4 +1,4 @@
-package com.mogudiandian.http.caller;
+package com.mogudiandian.http.caller.cb;
 
 import java.util.function.Supplier;
 

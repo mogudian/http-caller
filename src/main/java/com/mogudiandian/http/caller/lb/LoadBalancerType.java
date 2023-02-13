@@ -1,4 +1,4 @@
-package com.mogudiandian.http.caller;
+package com.mogudiandian.http.caller.lb;
 
 import java.util.function.Supplier;
 
@@ -10,8 +10,7 @@ import java.util.function.Supplier;
 public enum LoadBalancerType {
 
     RANDOM(() -> new LoadBalancerRandomImpl()),
-    POLLING(() -> new LoadBalancerPollingImpl()),
-    IP_HASH(() -> new LoadBalancerIpHashImpl());
+    POLLING(() -> new LoadBalancerPollingImpl());
 
     private Supplier<? extends LoadBalancer> instantiationMethod;
 

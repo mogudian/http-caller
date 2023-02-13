@@ -1,9 +1,8 @@
-package com.mogudiandian.http.caller;
+package com.mogudiandian.http.caller.lb;
 
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**

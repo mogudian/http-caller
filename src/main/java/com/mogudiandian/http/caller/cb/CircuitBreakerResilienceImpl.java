@@ -1,4 +1,4 @@
-package com.mogudiandian.http.caller;
+package com.mogudiandian.http.caller.cb;
 
 import io.github.resilience4j.circuitbreaker.CircuitBreakerConfig;
 import io.github.resilience4j.circuitbreaker.CircuitBreakerRegistry;

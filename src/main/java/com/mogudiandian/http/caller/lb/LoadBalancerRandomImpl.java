@@ -1,4 +1,4 @@
-package com.mogudiandian.http.caller;
+package com.mogudiandian.http.caller.lb;
 
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
