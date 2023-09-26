@@ -8,7 +8,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * 负载均衡-轮询算法
  *
- * @author sunbo
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 public class LoadBalancerPollingImpl implements LoadBalancer {
 

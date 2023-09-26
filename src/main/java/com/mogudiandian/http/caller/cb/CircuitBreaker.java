@@ -5,7 +5,8 @@ import java.util.function.Supplier;
 /**
  * 断路器
  *
- * @author sunbo
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 public interface CircuitBreaker {
 

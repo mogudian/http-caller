@@ -7,7 +7,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
  * HTTP调用者的配置
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 @ConfigurationProperties(prefix = "http.caller")
 @Getter

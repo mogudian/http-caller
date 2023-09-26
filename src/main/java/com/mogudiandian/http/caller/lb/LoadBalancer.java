@@ -5,7 +5,8 @@ import java.util.List;
 /**
  * 负载均衡器
  *
- * @author sunbo
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 public interface LoadBalancer {
 

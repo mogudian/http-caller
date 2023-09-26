@@ -10,7 +10,8 @@ import java.util.Map;
 /**
  * HTTP调用者
  *
- * @author sunbo
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 public interface HttpCaller {
 

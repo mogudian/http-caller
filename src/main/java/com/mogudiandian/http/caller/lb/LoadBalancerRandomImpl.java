@@ -6,7 +6,8 @@ import java.util.concurrent.ThreadLocalRandom;
 /**
  * 负载均衡-随机算法
  *
- * @author sunbo
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 public class LoadBalancerRandomImpl implements LoadBalancer {
 

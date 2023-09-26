@@ -30,7 +30,9 @@ import java.util.List;
 
 /**
  * HTTP调用者启动类
- * @author sunbo
+ *
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 @Configuration
 @EnableConfigurationProperties(HttpCallerProperties.class)

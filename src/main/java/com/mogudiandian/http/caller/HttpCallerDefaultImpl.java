@@ -16,7 +16,8 @@ import java.util.Map;
 /**
  * HTTP调用者默认实现 包括调用、重试、负载均衡、熔断
  *
- * @author sunbo
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 public class HttpCallerDefaultImpl implements HttpCaller {
 

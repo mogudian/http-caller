@@ -5,7 +5,8 @@ import java.util.function.Supplier;
 /**
  * 负载均衡器类型
  *
- * @author sunbo
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 public enum LoadBalancerType {
 

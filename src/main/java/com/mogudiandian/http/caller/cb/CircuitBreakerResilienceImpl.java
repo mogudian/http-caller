@@ -8,11 +8,13 @@ import java.util.function.Supplier;
 /**
  * 断路器resilience4j实现
  *
- * @author sunbo
+ * @author Joshua Sun
+ * @since 1.0.0
  */
 public class CircuitBreakerResilienceImpl implements CircuitBreaker {
 
     private CircuitBreakerRegistry circuitBreakerRegistry;
+
     private CircuitBreakerConfig circuitBreakerConfig;
 
     public CircuitBreakerResilienceImpl(CircuitBreakerConfig circuitBreakerConfig) {
