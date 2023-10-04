@@ -13,7 +13,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 public class LoadBalancerPollingImpl implements LoadBalancer {
 
-    private static final Map<String, AtomicInteger> counterMap = new ConcurrentHashMap<>();
+    private static final Map<String, AtomicInteger> COUNTER_MAP = new ConcurrentHashMap<>();
 
     private String getKey(List<String> list) {
         return "list@" + Integer.toHexString(list.hashCode());
@@ -21,7 +21,7 @@ public class LoadBalancerPollingImpl implements LoadBalancer {
 
     @Override
     public String select(List<String> list) {
-        AtomicInteger counter = counterMap.computeIfAbsent(getKey(list), k -> new AtomicInteger(-1));
+        AtomicInteger counter = COUNTER_MAP.computeIfAbsent(getKey(list), k -> new AtomicInteger(-1));
         int index = counter.incrementAndGet();
         if (index < 0 || index == Integer.MAX_VALUE) {
             synchronized (counter) {

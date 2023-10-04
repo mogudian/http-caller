@@ -10,10 +10,12 @@ import java.util.function.Supplier;
  */
 public enum LoadBalancerType {
 
-    RANDOM(() -> new LoadBalancerRandomImpl()),
-    POLLING(() -> new LoadBalancerPollingImpl());
+    RANDOM(LoadBalancerRandomImpl::new),
+    POLLING(LoadBalancerPollingImpl::new),
 
-    private Supplier<? extends LoadBalancer> instantiationMethod;
+    CUSTOMIZE(LoadBalancerCustomizeImpl::new);
+
+    private final Supplier<? extends LoadBalancer> instantiationMethod;
 
     LoadBalancerType(Supplier<LoadBalancer> instantiationMethod) {
         this.instantiationMethod = instantiationMethod;
